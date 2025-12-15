@@ -10,7 +10,7 @@
 
 ###
 
-<img align="right" height="150" src="https://media1.tenor.com/m/HJ04vK4YlZAAAAAC/ryo-yamada-bocchi-the-rock.gif" alt="Ryo Yamada Bass" />
+<img align="right" height="150" src="ryo.gif" alt="Ryo Yamada" />
 
 ###
 
