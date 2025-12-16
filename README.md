@@ -10,8 +10,16 @@
 
 ###
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" alt="php logo" />
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=php" height="60" alt="php logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=laravel" height="60" alt="laravel logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=go" height="60" alt="go logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=cpp" height="60" alt="cpp logo" />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=java" height="60" alt="java logo" />
   <img width="12" />
