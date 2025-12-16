@@ -1,16 +1,12 @@
-<h2 align="left">Hi 👋! My name is Reyhandhani and I'm a Junior Back End Developer, from Telkom University</h2>
+![Header](.github/img/github-header-banner%20(1).png)
 
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Reyhandhani&hide_title=false&hide_rank=true&show_icons=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Reyhandhani&hide_title=false&show_icons=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&rank_icon=github" height="150" alt="stats graph" />
   
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Reyhandhani&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph" />
 </div>
-
-###
-
-<img align="right" height="150" src="ryo.gif" alt="Ryo Yamada" />
 
 ###
 
