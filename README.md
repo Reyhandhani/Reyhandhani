@@ -63,6 +63,7 @@
 ![](https://nirzak-streak-stats.vercel.app/?user=Reyhandhani&theme=blue-green&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Reyhandhani&theme=blue-green&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-# 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Reyhandhani&limit=5&theme=blue-green&combine_all_yearly_contributions=true)
+<!-- # 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=Reyhandhani&limit=5&theme=blue-green&combine_all_yearly_contributions=true) -->
+
 <img src="https://raw.githubusercontent.com/Reyhandhani/Reyhandhani/output/snake.svg" alt="Snake animation" width="100%" />
