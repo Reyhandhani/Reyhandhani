@@ -64,7 +64,6 @@
 <!-- <img src="https://github-readme-stats.vercel.app/api?username=Reyhandhani&theme=blue-green&hide_border=false&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github" alt="stats graph" />
 <br> -->
 <img src="https://nirzak-streak-stats.vercel.app/?user=Reyhandhani&theme=blue-green&hide_border=false" alt="streak graph" />
-<br>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Reyhandhani&theme=blue-green&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="languages graph" />
 
 <!-- # 🔝 Top Contributed Repo
