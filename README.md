@@ -48,7 +48,7 @@
 
 ![Header](.github/img/github-header-banner%20(2).png)
 
-<img src="https://raw.githubusercontent.com/Reyhandhani/Reyhandhani/output/snake.svg" alt="Snake animation" width="100%" />
+<!-- <img src="https://raw.githubusercontent.com/Reyhandhani/Reyhandhani/output/snake.svg" alt="Snake animation" width="100%" /> -->
 
 # 💫 About Me:
 ### I'm focused on building clean, efficient, and scalable backend systems.<br><br>**🔧 Tech Focus**<br>- PHP & Go  <br>- RESTful API  <br>- Database & Backend Logic  <br><br>**📘 Currently Learning**<br>- Clean Architecture  <br>- System Design & Scalability  <br><br>**🤝 Open for Collaboration**<br>- Backend & open-source projects  <br><br>**💬 Ask Me About**<br>- Backend development, API, databases  <br><br>**⚡ Fun Fact**<br>- I enjoy turning complex logic into simple solutions<br>
