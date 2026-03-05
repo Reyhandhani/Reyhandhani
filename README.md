@@ -1,5 +1,5 @@
 # 💫 About Me:
-### I'm focused on building modern web applications that combine intuitive user interfaces with reliable and efficient backend systems..<br><br>**🔧 Tech Focus**<br>- Full Stack Web Development  <br>- Database Design & System Integration  <br>- Go (Golang) & PHP (Laravel)  <br><br>**📘 Currently Learning**<br>- Full Stack Architecture  <br>- System Design & Scalable Applications  <br><br>**🤝 Open for Collaboration**<br>- Full Stack web projects<br> - Open-source development<br><br>
+### I'm focused on building modern web applications that combine intuitive user interfaces with reliable and efficient backend systems.<br><br>**🔧 Tech Focus**<br>- Full Stack Web Development  <br>- Database Design & System Integration  <br>- Go (Golang) & PHP (Laravel)  <br><br>**📘 Currently Learning**<br>- Full Stack Architecture  <br>- System Design & Scalable Applications  <br><br>**🤝 Open for Collaboration**<br>- Full Stack web projects<br> - Open-source development<br><br>
 
 
 ## 🌐 Socials:
