@@ -1,5 +1,25 @@
-# 💫 About Me:
-### I'm focused on building modern web applications that combine intuitive user interfaces with reliable and efficient backend systems.<br><br>**🔧 Tech Focus**<br>- Full Stack Web Development  <br>- Database Design & System Integration  <br>- Go (Golang) & PHP (Laravel)  <br><br>**📘 Currently Learning**<br>- Full Stack Architecture  <br>- System Design & Scalable Applications  <br><br>**🤝 Open for Collaboration**<br>- Full Stack web projects<br> - Open-source development<br><br>
+# 💫 About Me
+
+### Information Systems Student | Full Stack Software Developer
+
+I'm passionate about building modern web applications with clean user experiences and reliable backend systems. I enjoy turning ideas into scalable software while continuously learning new technologies.
+
+**💻 Tech**
+- Go (Golang)
+- Laravel (PHP)
+- MySQL
+- REST API
+- HTML, CSS & Bootstrap
+
+**🌱 Currently Learning**
+- System Design
+- Scalable Architecture
+- DevOps & CI/CD
+
+**🤝 Open for**
+- Full Stack Projects
+- Open Source Collaboration
+- Backend & API Development
 
 
 ## 🌐 Socials:
