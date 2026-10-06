@@ -37,8 +37,6 @@ I'm passionate about building modern web applications with clean user experience
 # 📊 GitHub Stats:
 <div align="center">
 
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Reyhandhani&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&title_color=CC2970&icon_color=CC2970&text_color=FFFFFF&bg_color=0D1117&hide_border=true" height="180" alt="stats graph" /> <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Reyhandhani&layout=compact&title_color=CC2970&text_color=FFFFFF&bg_color=0D1117&hide_border=true" height="180" alt="languages graph" />
-
 <img src="https://streak-stats.demolab.com/?user=Reyhandhani&background=0D1117&ring=CC2970&fire=CC2970&stroke=CC2970&currStreakLabel=CC2970&sideLabels=CC2970&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&hide_border=true" height="180" alt="streak graph" />
 
 </div>
