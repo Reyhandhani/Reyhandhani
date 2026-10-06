@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="100" viewBox="0 0 1200 100">
+  <title>Let's work together — email or LinkedIn</title>
+  <path d="M0 34L1200 4V72L0 100Z" fill="#e6162c"/>
+  <path d="M24 32L525 15L542 78L17 85Z" fill="#111111"/>
+  <text x="50" y="66" fill="#fff9ed" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="32" transform="rotate(-2 50 66)">LET'S WORK TOGETHER.</text>
+  <path d="M1122 27L1129 43L1147 43L1133 54L1138 72L1122 61L1107 72L1112 54L1097 43L1116 43Z" fill="#fff9ed"/>
+</svg>

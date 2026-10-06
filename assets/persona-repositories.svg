@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="74" viewBox="0 0 450 74" fill="none">
+<title>Browse my repositories</title><desc>Browse my repositories</desc>
+<path d="M4 8L442 0L450 62L0 72Z" fill="#e6162c"/>
+<text x="23" y="46" fill="#fff9ed" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" font-style="italic">BROWSE REPOSITORIES</text>
+<path d="M398 37H425M414 26L425 37L414 48" stroke="#fff9ed" stroke-width="3"/>
+</svg>

@@ -10,6 +10,10 @@ on:
     branches:
     - main
 
+concurrency:
+  group: persona-contribution-refresh
+  cancel-in-progress: true
+
 jobs:
   generate:
     permissions:
@@ -18,14 +22,32 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      - name: Check out the profile
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
       - name: generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#cc2970&color_dots=#ebedf0,#f6c3da,#ee8ab8,#dd5595,#cc2970
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#cc2970&color_dots=#161b22,#46112c,#761b49,#a12260,#cc2970
+            dist/github-contribution-grid-snake.svg?color_snake=#e6162c&color_dots=#ebedf0,#f9c9cf,#f28b98,#e94d61,#e6162c
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#e6162c&color_dots=#161b22,#3b1117,#711420,#a91628,#e6162c
 
+      - name: Style and refresh the Persona contribution card
+        run: |
+          python3 scripts/style_persona_snake.py --source dist/github-contribution-grid-snake-dark.svg --output assets/persona-contributions.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/persona-contributions.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Refresh Persona contribution card [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       - name: push snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
