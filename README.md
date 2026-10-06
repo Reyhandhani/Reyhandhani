@@ -50,9 +50,9 @@
 
 <div align="center">
 
-<a href="mailto:reyhandhani11@gmail.com"><img src="./assets/persona-email.svg" width="48%" alt="Email - reyhandhani11@gmail.com" /></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=reyhandhani11@gmail.com"><img src="./assets/persona-email.svg" width="48%" alt="Email - reyhandhani11@gmail.com" /></a>
 &nbsp;
-<a href="https://www.linkedin.com/in/muhammad-reyhandhani-4587002b7"><img src="./assets/persona-linkedin.svg" width="48%" alt="LinkedIn - Muhammad Reyhandhani" /></a>
+<a href="https://www.linkedin.com/in/muhammad-reyhandhani"><img src="./assets/persona-linkedin.svg" width="48%" alt="LinkedIn - Muhammad Reyhandhani" /></a>
 
 <br />
 <br />
