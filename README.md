@@ -31,7 +31,7 @@
 
 <br />
 
-<img src="./assets/persona-activity.svg" width="100%" alt="Activity — the contribution record" />
+<img src="./assets/persona-activity.svg?v=40511914313" width="100%" alt="Activity — the contribution record" />
 
 <div align="center">
 
@@ -40,7 +40,7 @@
 <br />
 <br />
 
-<img src="./assets/persona-contributions.svg" width="100%" alt="My real GitHub contribution history as an animated Persona 5 Royal card, with a white snake and a red, black, and white grid." />
+<img src="./assets/persona-contributions.svg?v=40511914313" width="100%" alt="My real GitHub contribution history as an animated Persona 5 Royal card, with a white snake and a red, black, and white grid." />
 
 </div>
 
