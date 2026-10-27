@@ -33,10 +33,14 @@ jobs:
           PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
         run: python3 scripts/build_activity_svg.py
 
-      - name: Build the Persona contribution trail
+      - name: Generate snake animation from the full contribution calendar
         env:
-          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python3 scripts/build_contribution_svg.py
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          npx --yes generate-snake-animation@3.5.0 --github_user=${{ github.repository_owner }} --output="dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#e6162c&color_dots=#161b22,#3b1117,#711420,#a91628,#e6162c"
+
+      - name: Style the Persona contribution card
+        run: python3 scripts/style_persona_snake.py --source dist/github-contribution-grid-snake-dark.svg --output assets/persona-contributions.svg
 
       - name: Refresh README asset versions and commit
         run: |
