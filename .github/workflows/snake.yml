@@ -1,8 +1,8 @@
 name: Generate snake animation
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "0 */12 * * *"
+  schedule: # execute every 3 hours
+    - cron: "0 */3 * * *"
 
   workflow_dispatch:
 
@@ -36,13 +36,19 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=#e6162c&color_dots=#ebedf0,#f9c9cf,#f28b98,#e94d61,#e6162c
             dist/github-contribution-grid-snake-dark.svg?color_snake=#e6162c&color_dots=#161b22,#3b1117,#711420,#a91628,#e6162c
 
+      - name: Build the Persona activity card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_activity_svg.py
+
       - name: Style and refresh the Persona contribution card
         run: |
           python3 scripts/style_persona_snake.py --source dist/github-contribution-grid-snake-dark.svg --output assets/persona-contributions.svg
-          sed -i -E "s#(assets/persona-(contributions|activity)\.svg)(\?v=[^\"' )]*)?#\1?v=${GITHUB_RUN_ID}#g" README.md
+          VERSION=$(cat assets/persona-contributions.svg assets/persona-activity.svg | sha256sum | cut -c1-12)
+          sed -i -E "s#(assets/persona-(contributions|activity)\.svg)(\?v=[^\"' )]*)?#\1?v=${VERSION}#g" README.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/persona-contributions.svg README.md
+          git add assets/persona-contributions.svg assets/persona-activity.svg README.md
           if git diff --cached --quiet; then
             exit 0
           fi

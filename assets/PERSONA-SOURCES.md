@@ -40,10 +40,11 @@ stop the banner and contribution animations.
 
 The initial contribution source is assets/contribution-source.svg, used as the
 offline fallback for local rebuilds. The workflow generates fresh contribution
-data on schedule, restyles the card, and commits assets/persona-contributions.svg
-and README.md to main with [skip ci] to avoid a push-triggered loop. Each run
-also appends ?v=<run id> to the asset URLs in README.md so GitHub's image cache
-fetches the new file instead of serving a stale copy. No output branch is kept.
+data on schedule, restyles the card, renders persona-activity.svg from the live
+GitHub contribution calendar (scripts/build_activity_svg.py, needs GITHUB_TOKEN),
+and commits those files and README.md to main with [skip ci] to avoid a
+push-triggered loop. The asset URLs in README.md get ?v=<hash of the files> so
+GitHub's image cache fetches new content when it changes. No output branch is kept.
 
 The section strips and contact section title are standalone editable SVG files.
 Only active profile assets, their original artwork, and the two current build
