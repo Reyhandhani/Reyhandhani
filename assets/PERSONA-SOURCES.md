@@ -38,11 +38,12 @@ stop the banner and contribution animations.
 - arsene-official.png: original banner artwork
 - arsene-strikers-official.png: alternate profile artwork
 
-The initial contribution source was downloaded from the existing output branch.
-The workflow generates fresh contribution data every 12 hours, restyles the card,
-and commits only assets/persona-contributions.svg to main with [skip ci] to
-avoid a push-triggered loop. It also preserves the original output-branch SVGs.
-This workflow has been prepared locally and must be published before it runs.
+The initial contribution source is assets/contribution-source.svg, used as the
+offline fallback for local rebuilds. The workflow generates fresh contribution
+data on schedule, restyles the card, and commits assets/persona-contributions.svg
+and README.md to main with [skip ci] to avoid a push-triggered loop. Each run
+also appends ?v=<run id> to the asset URLs in README.md so GitHub's image cache
+fetches the new file instead of serving a stale copy. No output branch is kept.
 
 The section strips and contact section title are standalone editable SVG files.
 Only active profile assets, their original artwork, and the two current build
