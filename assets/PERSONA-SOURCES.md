@@ -18,7 +18,11 @@ as a data URI. The character illustration was not generated or repainted.
 No Python dependencies are needed for the current SVG assets:
 
     python scripts/build_persona_svg.py
-    python scripts/style_persona_snake.py
+
+The contribution trail and activity card need PROFILE_TOKEN (see below):
+
+    PROFILE_TOKEN=... python scripts/build_activity_svg.py
+    PROFILE_TOKEN=... python scripts/build_contribution_svg.py
 
 The banner's geometry and lettering remain vector graphics. The unmodified
 Arsène image is shared between independently animated wing-tip layers and the
@@ -38,12 +42,13 @@ stop the banner and contribution animations.
 - arsene-official.png: original banner artwork
 - arsene-strikers-official.png: alternate profile artwork
 
-The initial contribution source is assets/contribution-source.svg, used as the
-offline fallback for local rebuilds. The workflow generates fresh contribution
-data on schedule, restyles the card, renders persona-activity.svg from the live
-GitHub contribution calendar (scripts/build_activity_svg.py, needs GITHUB_TOKEN),
-and commits those files and README.md to main with [skip ci] to avoid a
-push-triggered loop. The asset URLs in README.md get ?v=<hash of the files> so
+The workflow reads the full GitHub contribution calendar on schedule and renders
+persona-activity.svg (scripts/build_activity_svg.py) and persona-contributions.svg
+(scripts/build_contribution_svg.py) from it. Both scripts read PROFILE_TOKEN and
+fall back to GITHUB_TOKEN; a PROFILE_TOKEN with read:user is needed to include
+private contributions, which the default token cannot see. Only per-day totals
+are drawn, so no repository or event details reach the public README. The bot
+commits those files and README.md to main with [skip ci] to avoid a push-triggered loop. The asset URLs in README.md get ?v=<hash of the files> so
 GitHub's image cache fetches new content when it changes. No output branch is kept.
 
 The section strips and contact section title are standalone editable SVG files.

@@ -28,22 +28,18 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: generate snake.svg
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#e6162c&color_dots=#ebedf0,#f9c9cf,#f28b98,#e94d61,#e6162c
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#e6162c&color_dots=#161b22,#3b1117,#711420,#a91628,#e6162c
-
       - name: Build the Persona activity card
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
         run: python3 scripts/build_activity_svg.py
 
-      - name: Style and refresh the Persona contribution card
+      - name: Build the Persona contribution trail
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_contribution_svg.py
+
+      - name: Refresh README asset versions and commit
         run: |
-          python3 scripts/style_persona_snake.py --source dist/github-contribution-grid-snake-dark.svg --output assets/persona-contributions.svg
           VERSION=$(cat assets/persona-contributions.svg assets/persona-activity.svg | sha256sum | cut -c1-12)
           sed -i -E "s#(assets/persona-(contributions|activity)\.svg)(\?v=[^\"' )]*)?#\1?v=${VERSION}#g" README.md
           git config user.name "github-actions[bot]"

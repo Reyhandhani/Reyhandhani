@@ -88,9 +88,9 @@ def render(total, last_30, current, longest, updated):
 
 
 def main():
-    token = os.environ.get("GITHUB_TOKEN")
+    token = os.environ.get("PROFILE_TOKEN")
     if not token:
-        raise SystemExit("GITHUB_TOKEN is required")
+        raise SystemExit("PROFILE_TOKEN is required")
     login = os.environ.get("GITHUB_REPOSITORY_OWNER", "Reyhandhani")
     today = datetime.now(timezone.utc).date()
     total, counts = fetch_calendar(login, token)
