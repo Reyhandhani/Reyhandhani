@@ -19,11 +19,11 @@ No Python dependencies are needed for the current SVG assets:
 
     python scripts/build_persona_svg.py
 
-The activity card and contribution trail need PROFILE_TOKEN (see below):
+The contribution trail and streak card need PROFILE_TOKEN (see below):
 
-    PROFILE_TOKEN=... python scripts/build_activity_svg.py
     GITHUB_TOKEN=... npx generate-snake-animation@3.5.0 --github_user=Reyhandhani --output="dist/github-contribution-grid-snake-dark.svg?palette=github-dark"
     python scripts/style_persona_snake.py
+    PROFILE_TOKEN=... python scripts/build_streak_svg.py
 
 The banner's geometry and lettering remain vector graphics. The unmodified
 Arsène image is shared between independently animated wing-tip layers and the
@@ -38,16 +38,17 @@ stop the banner and contribution animations.
 - persona-repositories.svg: repositories button
 - persona-email.svg / persona-linkedin.svg: individual linked contact cards
 - persona-contributions.svg: actual contribution animation in a Persona frame
-- persona-profile.svg / persona-stack.svg / persona-activity.svg: section strips
+- persona-profile.svg / persona-stack.svg / persona-activity.svg: section strips (static)
 - persona-footer.svg: contact section title
 - arsene-official.png: original banner artwork
 - arsene-strikers-official.png: alternate profile artwork
 
 The workflow runs on schedule:
 
-- persona-activity.svg is rendered by scripts/build_activity_svg.py.
 - persona-contributions.svg is the official Platane snake animation
   (generate-snake-animation@3.5.0, pinned), framed by scripts/style_persona_snake.py.
+- persona-streak.svg is the streak card (scripts/build_streak_svg.py), same layout
+  as streak-stats, computed from the full contribution history.
 
 Both read the GitHub contribution calendar through GraphQL with PROFILE_TOKEN,
 falling back to GITHUB_TOKEN. A PROFILE_TOKEN with read:user is needed to include

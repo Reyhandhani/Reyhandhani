@@ -35,7 +35,7 @@
 
 <div align="center">
 
-<a href="https://github.com/Reyhandhani"><img src="https://streak-stats.demolab.com/?user=Reyhandhani&amp;background=111111&amp;ring=E6162C&amp;fire=E6162C&amp;stroke=333333&amp;currStreakLabel=E6162C&amp;sideLabels=FFFFFF&amp;currStreakNum=FFFFFF&amp;sideNums=FFFFFF&amp;dates=B5B5B5&amp;hide_border=true" width="520" alt="Reyhandhani's GitHub contribution streak statistics" /></a>
+<a href="https://github.com/Reyhandhani"><img src="./assets/persona-streak.svg" width="520" alt="Reyhandhani's GitHub contribution streak statistics" /></a>
 
 <br />
 <br />
