@@ -35,12 +35,12 @@
 
 <div align="center">
 
-<a href="https://github.com/Reyhandhani"><img src="./assets/persona-streak.svg?v=055d79662e3e" width="520" alt="Reyhandhani's GitHub contribution streak statistics" /></a>
+<a href="https://github.com/Reyhandhani"><img src="./assets/persona-streak.svg?v=de26fb35e1ef" width="520" alt="Reyhandhani's GitHub contribution streak statistics" /></a>
 
 <br />
 <br />
 
-<img src="./assets/persona-contributions.svg?v=055d79662e3e" width="100%" alt="My real GitHub contribution history as an animated Persona 5 Royal card, with a white snake and a red, black, and white grid." />
+<img src="./assets/persona-contributions.svg?v=de26fb35e1ef" width="100%" alt="My real GitHub contribution history as an animated Persona 5 Royal card, with a white snake and a red, black, and white grid." />
 
 </div>
 
